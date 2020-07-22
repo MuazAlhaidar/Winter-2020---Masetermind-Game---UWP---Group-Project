@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="MasterMind_UWP_Edition.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MasterMind_UWP_Edition"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    mc:Ignorable="d"
+    Background="Black">
+
+    <Grid>
+        <canvas:CanvasAnimatedControl x:Name="canvas" Draw="Canvas_Draw" Update="Canvas_Update" CreateResources="Canvas_Create_Resources"></canvas:CanvasAnimatedControl>
+
+        <Button x:Name="StartButton" Content="" Margin="150,275,0,0" VerticalAlignment="Top" Width="200" Height="55" Opacity="0.3" Click="StartButton_Click" Canvas.ZIndex="1"/>
+        <Button x:Name="InstructionsButton" Content="" Margin="150,375,0,0" VerticalAlignment="Top" Width="200" Height="55" Opacity="0.3" Click="InstructionsButton_Click" Canvas.ZIndex="1"/>
+        <Button x:Name="CreditsButton" Content="" Margin="150,475,0,0" VerticalAlignment="Top" Width="200" Height="55" Opacity="0.3" Click="CreditsButton_Click" Canvas.ZIndex="1"/>
+        <Image HorizontalAlignment="Left" Height="94" Margin="298,199,0,0" VerticalAlignment="Top" Width="146" Source="Assets/confused1.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Opacity="0.58">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-20"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="84" Margin="43,424,0,0" VerticalAlignment="Top" Width="129" Source="Assets/confused2.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Opacity="0.59">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="25.879"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="94" Margin="288,502,0,0" VerticalAlignment="Top" Width="142" Source="Assets/confused3.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Opacity="0.6">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-128.811"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="92" Margin="57,95,0,0" VerticalAlignment="Top" Width="137" Source="Assets/confused4.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Opacity="0.6">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="142.335"/>
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+</Page>
