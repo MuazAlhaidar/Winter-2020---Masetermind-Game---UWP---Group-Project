@@ -151,7 +151,7 @@ namespace MasterMind_UWP_Edition {
 
         public Color NextColor(Color currentColor) {
 
-            if (currentColor == Colors.SlateGray) {
+            if (currentColor == Colors.SlateGray || currentColor == Colors.Cyan) {
 
                 return PegColors[0];
             }
@@ -174,10 +174,6 @@ namespace MasterMind_UWP_Edition {
             else if (currentColor == Colors.Purple) {
 
                 return PegColors[5];
-            }
-            else if (currentColor == Colors.Cyan) {
-
-                return PegColors[0];
             }
 
             return default;
